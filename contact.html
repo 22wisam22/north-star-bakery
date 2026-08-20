@@ -34,26 +34,33 @@
                 a general question.
             </p>
 
-            <form action="#" method="post">
+            <form id="request-form" novalidate>
 
                 <fieldset>
 
                     <legend>Customer Request Information</legend>
 
                     <p>
+                        
                         <label for="name">Name:</label>
+
                         <input type="text"
                                id="name"
                                name="name"
                                required>
+
+                        <small id="name-error"></small>       
                     </p>
 
                     <p>
                         <label for="email">Email:</label>
+
                         <input type="email"
                                id="email"
                                name="email"
                                required>
+
+                        <small id="email-error"></small>
                     </p>
 
                     <p>
@@ -102,6 +109,7 @@
 
                     <p>
                         <button type="submit">Submit Request</button>
+                        <p id="form-message"></p>
                     </p>
 
                 </fieldset>
@@ -131,6 +139,8 @@
     <footer>
         <p>&copy; 2026 North Star Bakery</p>
     </footer>
+    
+<script src="script.js"></script>
 
 </body>
 </html>
